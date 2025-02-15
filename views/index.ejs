@@ -1,9 +1,20 @@
-<ul>
-  <% messages.forEach(message => { %>
-  <li class="message">
-    <p class="user"><%= message.user %>:</p>
-    <p><%= message.text %></p>
-    <p class="date"><%= message.added.toLocaleString() %></p>
-  </li>
-  <% }); %>
-</ul>
+<head>
+  <link rel="stylesheet" href="/index.css" />
+</head>
+
+<body>
+  <h1 class="title">MonkeyChat 🐒</h1>
+  <ul class="messages">
+    <% messages.forEach(message => { %>
+    <li class="message">
+      <p class="user"><%= message.user %>:</p>
+      <p><%= message.text %></p>
+      <p class="date"><%= message.added.toLocaleString() %></p>
+    </li>
+    <% }); %>
+  </ul>
+
+  <form action="/new" method="get">
+    <button class="send">Send a Message</button>
+  </form>
+</body>

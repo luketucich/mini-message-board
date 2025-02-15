@@ -1,8 +1,16 @@
-<form method="POST" action="/new">
-  <h1>Send a Message</h1>
+<head>
+  <link rel="stylesheet" href="/form.css" />
+</head>
 
-  <input type="text" name="name" placeholder="Name" />
-  <input type="text" name="message" placeholder="Message" required />
+<body>
+  <form method="POST" action="/new">
+    <h1>Send a Message</h1>
 
-  <button type="submit">Submit</button>
-</form>
+    <input type="text" name="name" placeholder="Name" />
+    <input type="text" name="message" placeholder="Message" required />
+
+    <button type="submit" class="submit-button">Submit</button>
+  </form>
+
+  <a href="/"><button class="back-button">Back</button></a>
+</body>

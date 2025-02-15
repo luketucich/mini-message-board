@@ -16,7 +16,10 @@ const messages = [
 ];
 
 indexRouter.get("/", (req, res) => {
-  res.render("index", { title: "Mini Messageboard", messages: messages });
+  res.render("index", {
+    title: "Mini Messageboard",
+    messages: messages.slice().sort((a, b) => b.added - a.added),
+  });
 });
 
 module.exports = indexRouter;
