@@ -12,6 +12,7 @@ body {
 .title {
   font-size: 2rem;
   margin: 1rem;
+  color: #333;
 }
 
 .messages {
@@ -51,6 +52,7 @@ body {
 .user {
   font-weight: bold;
   font-size: 1.2rem;
+  color: #333;
 }
 
 .date {
